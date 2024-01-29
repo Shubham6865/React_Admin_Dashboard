@@ -3,7 +3,7 @@ import './Sidebar.scss';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import StoreOutlinedIcon from '@mui/icons-material/StoreOutlined';
-import { AccountCircleOutlined, CreditCard, ExitToApp, InsertChart, LocalShipping, NotificationsNone, PsychologyOutlined, SettingsApplications, SettingsSystemDaydreamOutlined } from '@mui/icons-material';
+import { AccountCircleOutlined, CreditCard, ExitToApp, InsertChart, NotificationsNone, PsychologyOutlined, SettingsApplications, SettingsSystemDaydreamOutlined } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import { DarkModeContext } from '../../context/darkModeReducer';
 
@@ -46,11 +46,11 @@ const Sidebar = () => {
                             <span> Orders</span>
                         </Link>
                     </li>
-                    <li><LocalShipping className='icon' />
+                    {/* <li><LocalShipping className='icon' />
                         <Link to="/delivery" style={{ textDecoration: "none" }}>
                             <span> Delivery</span>
                         </Link>
-                    </li>
+                    </li> */}
                     <p className="title">USEFUL</p>
                     <li><InsertChart className='icon' />
                         <Link to="/stats" style={{ textDecoration: "none" }}>

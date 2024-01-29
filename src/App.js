@@ -6,10 +6,13 @@ import List from './pages/list/List';
 import Single from './pages/single/Single';
 import New from './pages/new/New';
 import { productInputs, userInputs } from './FormSource';
-import './style/dark.scss';
 import { useContext } from 'react';
 import { DarkModeContext } from './context/darkModeReducer';
 import PageNotFound from './components/pageNotFound/PageNotFound';
+import Products from './pages/products/Products';
+import Orders from './pages/orders/Orders';
+import './style/dark.scss';
+
 
 
 function App() {
@@ -31,10 +34,13 @@ function App() {
               <Route path='new' element={<New inputs={userInputs} title="Add New User" />} />
             </Route>
             <Route path='products'>
-              <Route index element={<List />} />
+              <Route index element={<Products />} />
               <Route path=':productId' element={<Single />} />
               <Route path='new' element={<New inputs={productInputs} title="Add New Products" />} />
             </Route>
+
+            <Route path='orders' element={<Orders />} />
+
             <Route path='*' element={<PageNotFound />} />
           </Route>
         </Routes>

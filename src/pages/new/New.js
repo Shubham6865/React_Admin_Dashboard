@@ -3,6 +3,7 @@ import Sidebar from '../../components/sidebar/Sidebar';
 import Navbar from '../../components/navbar/Navbar';
 import { DriveFolderUploadOutlined } from '@mui/icons-material';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const New = ({ inputs, title }) => {
@@ -16,6 +17,12 @@ const New = ({ inputs, title }) => {
                 <Navbar />
                 <div className="top">
                     <h1 className="title">{title}</h1>
+                    {title === "Add New User" ? (
+                        <Link to="/users" className='backbtn'>Back</Link>
+                    ) : (
+                        <Link to="/products" className='backbtn'>Back</Link>
+                    )}
+
                 </div>
                 <div className="bottom">
                     <div className="left">

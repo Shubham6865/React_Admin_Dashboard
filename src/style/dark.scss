@@ -75,6 +75,51 @@
         }
     }
 
+    .orders {
+        background-color: #111;
+
+        .ordersContainer {
+
+            .backbtn {
+                color: #999;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .customcard {
+
+        .card_container {
+            background-color: #111;
+
+            color: #999;
+
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(134, 133, 133, 0.47);
+
+            .cardDescription {
+
+                color: #999;
+            }
+
+            button {
+                border: 1px solid #dddada;
+                color: #dddada;
+                color: #f8be00;
+                cursor: pointer;
+
+                &:hover {
+                    border: 1px solid #f8be00;
+                    color: #f8be00;
+                    color: #dddada;
+                }
+            }
+        }
+    }
+
     input {
         background-color: transparent;
     }

@@ -1,12 +1,12 @@
 import './DataTable.scss';
 import { DataGrid } from '@mui/x-data-grid';
-import { userColumns, userRows } from '../../DataTableSource';
+
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 
 
-const DataTable = () => {
+const DataTable = ({ userColumns, userRows, title }) => {
     const actionColumn = [{
         field: "action", headerName: "Action", width: '200',
         renderCell: (params) => {
@@ -32,8 +32,16 @@ const DataTable = () => {
     return (
         <div className='datatable'>
             <div className="datatableTitle">
-                Add New User
-                <Link to="/users/new" className='addnewbtn'>Add New</Link>
+
+                {title}
+                <div className='navbtn'>
+
+                    {title === 'Add New User' ? (
+                        <Link to="/users/new" className='addnewbtn'>Add New</Link>) : (
+                        <Link to="/products/new" className='addnewbtn'>Add New</Link>)}
+
+                    <Link to="/" className='backbtn'>Back</Link>
+                </div>
             </div>
             <DataGrid
                 className='datagrid'

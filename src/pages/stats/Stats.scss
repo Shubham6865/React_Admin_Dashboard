@@ -1,0 +1,28 @@
+.stats {
+
+    display: flex;
+
+    .statsContainer {
+        flex: 6;
+
+        .chartsContainer {
+            border: 1px solid red;
+
+            .top,
+            .bottom {
+
+                display: flex;
+
+                .left {
+                    width: 50%;
+                    border: 1px solid rgb(108, 201, 33);
+                }
+
+                .right {
+                    width: 50%;
+                    border: 1px solid rgb(33, 78, 201);
+                }
+            }
+        }
+    }
+}
