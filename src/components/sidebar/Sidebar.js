@@ -16,7 +16,8 @@ const Sidebar = () => {
         <div className="sidebar">
             <div className="top">
                 <Link to="/" style={{ textDecoration: "none" }}>
-                    <span className='logo'>Shubham</span>
+                    <span className='logo full'>Shubham</span>
+                    <span className='logo half'>SP</span>
                 </Link>
 
             </div>
@@ -24,26 +25,29 @@ const Sidebar = () => {
             <div className="center">
                 <ul>
                     <p className="title">MAIN</p>
-                    <li><DashboardIcon className='icon' />
+                    <li>
                         <Link to="/" style={{ textDecoration: "none" }}>
+                        <DashboardIcon className='icon' />
                             <span> Dashboard</span>
                         </Link>
                     </li>
                     <p className="title">LIST</p>
-                    <li><PersonOutlineOutlinedIcon className='icon' />
+                    <li>
                         <Link to="/users" style={{ textDecoration: "none" }}>
-                            <span> User</span>
+                        <PersonOutlineOutlinedIcon className='icon' />
+                        <span> User</span>
                         </Link>
                     </li>
-                    <li><StoreOutlinedIcon className='icon' />
+                    <li>
                         <Link to="/products" style={{ textDecoration: "none" }}>
-                            <span> Products</span>
+                        <StoreOutlinedIcon className='icon' />
+                        <span> Products</span>
                         </Link>
                     </li>
-                    <li><CreditCard className='icon' />
+                    <li>
                         <Link to="/orders" style={{ textDecoration: "none" }}>
-
-                            <span> Orders</span>
+                        <CreditCard className='icon' />
+                        <span> Orders</span>
                         </Link>
                     </li>
                     {/* <li><LocalShipping className='icon' />
@@ -52,41 +56,48 @@ const Sidebar = () => {
                         </Link>
                     </li> */}
                     <p className="title">USEFUL</p>
-                    <li><InsertChart className='icon' />
+                    <li>
                         <Link to="/stats" style={{ textDecoration: "none" }}>
+                        <InsertChart className='icon' />
                             <span> Stats</span>
                         </Link>
                     </li>
-                    <li><NotificationsNone className='icon' />
+                    <li>
                         <Link to="/notifications" style={{ textDecoration: "none" }}>
-                            <span> Notifications</span>
+                        <NotificationsNone className='icon' />
+                        <span> Notifications</span>
                         </Link>
                     </li>
                     <p className="title">SERVICE</p>
-                    <li><SettingsSystemDaydreamOutlined className='icon' />
+                    <li>
                         <Link to="/health" style={{ textDecoration: "none" }}>
-                            <span> System Health</span>
+                        <SettingsSystemDaydreamOutlined className='icon' />
+                        <span> System Health</span>
                         </Link>
                     </li>
-                    <li> <PsychologyOutlined className='icon' />
+                    <li>
                         <Link to="/logs" style={{ textDecoration: "none" }}>
-                            <span>Logs</span>
+                        <PsychologyOutlined className='icon' />
+                        <span>Logs</span>
                         </Link>
                     </li>
-                    <li> <SettingsApplications className='icon' />
+                    <li> 
                         <Link to="/products" style={{ textDecoration: "none" }}>
+                        <SettingsApplications className='icon' />
                             <span>Setting</span>
                         </Link>
                     </li>
                     <p className="title">USER</p>
-                    <li> <AccountCircleOutlined className='icon' />
+                    <li>
                         <Link to="/profile" style={{ textDecoration: "none" }}>
+                        <AccountCircleOutlined className='icon' />
                             <span>Profile</span>
                         </Link>
                     </li>
-                    <li> <ExitToApp className='icon' />
+                    <li>
                         <Link to="/logout" style={{ textDecoration: "none" }}>
-                            <span>Logout</span>
+                        <ExitToApp className='icon' />
+                        <span>Logout</span>
                         </Link>
                     </li>
                 </ul>
