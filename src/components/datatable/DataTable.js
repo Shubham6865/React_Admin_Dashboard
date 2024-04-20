@@ -3,6 +3,7 @@ import { DataGrid } from '@mui/x-data-grid';
 
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 
 
@@ -25,9 +26,13 @@ const DataTable = ({ userColumns, userRows, title }) => {
     }]
 
     const [data, setData] = useState(userRows)
+    const toastMessage = title === 'Add New User' ? "User Deleted!" : "Deleted!!";
 
     const handelDelete = (id) => {
         setData(data.filter(item => item.id !== id))
+
+        toast.success(toastMessage);
+
     }
     return (
         <div className='datatable'>
